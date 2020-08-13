@@ -1,0 +1,81 @@
+
+.content{
+    .nav-content{
+        text-align: center;
+        width: 100%;
+        margin-top: 39px;
+        .block{
+            width: 44%;
+            display: flex;
+            justify-content: space-evenly;
+            margin: 0 auto;
+            background: $color-bck;
+            box-shadow: 0px 3px 7px #e0dede;
+            box-sizing: border-box;
+            border-radius: 10px;
+                     .formulaire{
+                        padding: 26px 20px;
+                      .formule{
+                            display: flex;
+                            flex-wrap: wrap;
+                            flex-direction: row;
+                            // justify-content: center;
+                       .les-input{
+                            padding: 8px 19px;
+                        .label{
+                            font-size: 17px;
+                            font-family: cursive;
+                            float: left;
+                        }
+                        .input{
+                          @extend %input; 
+                          width: 96%;                    
+                        }
+                        .input:hover{border: 2px solid $hover-input}
+                    }
+                }
+                .btn{
+                    width: 73%;
+                    padding: 9px;
+                    margin-top: 24px;
+                    border: 1px solid $color-bck2;
+                    // border-radius: 9px;
+                    background: linear-gradient(to right, $color-btn, $color-bck2);
+                    font-size: 17px;
+                    font-family: monospace;
+                    }
+                    .btn:hover {
+                        background: $hover-btn;
+                        }
+            }
+        }
+    }
+}
+.input-number{
+    @extend %input; 
+    width: 48%;
+}
+
+.box{
+    .content{
+        //  width: 39%;
+        //  background: $color-bck;
+         margin: 0 auto;
+         font-size: 17px;
+         height: 117px;
+         padding: 16px;
+            .table{
+                margin:0 auto;
+                text-align: center;
+                .th{
+                    @extend %table;
+                }
+                .td{
+                   @extend %table;
+                }
+            }
+    } 
+}
+
+
+  
